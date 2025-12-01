@@ -1,165 +1,87 @@
-# promo-indihome-daerah-barru
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promo IndiHome Unlimited - Daftar Resmi & Cepat</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Shopee Clone - Promosi Toko Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { background-color: #ee4d2d; color: white; padding: 10px 0; }
+        .promo-banner { background-color: #f8f9fa; padding: 20px; text-align: center; }
+        .category { margin: 20px 0; }
+        .product-card { border: 1px solid #ddd; padding: 10px; margin: 10px; text-align: center; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+    </style>
 </head>
 <body>
 
-    <header class="hero-section">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <h1>Promo IndiHome Unlimited</h1>
-            <p class="subtitle">Internet Fiber Optik Tercepat & Stabil untuk Rumah Anda</p>
-            <div class="badge-resmi">100% Sales Resmi</div>
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <h2>Shopee Clone</h2> <!-- Ganti dengan logo gambar jika ada -->
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Cari produk...">
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="#" class="text-white me-3">Keranjang</a>
+                    <a href="#" class="text-white">Login</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="container package-grid">
+    <!-- Banner Promosi -->
+    <section class="promo-banner">
+        <h1>Diskon Hingga 70%!</h1>
+        <p>Belanja produk favorit Anda dengan harga terbaik. Promo terbatas!</p>
+        <img src="https://via.placeholder.com/800x300?text=Promo+Banner" alt="Banner Promosi" class="img-fluid">
+    </section>
 
-        <div class="package-card" data-package="20Mbps">
-            <div class="speed">20Mbps</div>
-            <div class="price">
-                <span>Rp</span>190<small>.000</small>
-                <div class="per-bulan">/ bulan</div>
+    <!-- Kategori Produk -->
+    <section class="container category">
+        <h2>Kategori Populer</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200x200?text=Elektronik" alt="Elektronik" class="img-fluid">
+                    <h5>Elektronik</h5>
+                    <p>Diskon hingga 50%</p>
+                </div>
             </div>
-            <ul class="features">
-                <li><i class="fas fa-tv"></i> IndiHome TV</li>
-            </ul>
-            <div class="biaya-pasang">Biaya Pasang: Rp 166.500</div>
-            <button class="cta-button" onclick="openModal('20Mbps')">Isi Formulir</button>
-        </div>
-
-        <div class="package-card best-seller" data-package="50Mbps">
-            <div class="best-seller-tag">TERLARIS</div>
-            <div class="speed">50Mbps</div>
-            <div class="price">
-                <span>Rp</span>240<small>.000</small>
-                <div class="per-bulan">/ bulan</div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200x200?text=Fashion" alt="Fashion" class="img-fluid">
+                    <h5>Fashion</h5>
+                    <p>Stylish dan murah</p>
+                </div>
             </div>
-            <ul class="features">
-                <li><i class="fas fa-play"></i> Catchplay+</li>
-                <li><i class="fas fa-tv"></i> TV</li>
-                <li><i class="fas fa-star"></i> Prime Video</li>
-            </ul>
-            <div class="biaya-pasang">Biaya Pasang: Rp 166.500</div>
-            <button class="cta-button" onclick="openModal('50Mbps')">Isi Formulir</button>
-        </div>
-
-        <div class="package-card" data-package="75Mbps">
-            <div class="speed">75Mbps</div>
-            <div class="price">
-                <span>Rp</span>270<small>.000</small>
-                <div class="per-bulan">/ bulan</div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200x200?text=Kesehatan" alt="Kesehatan" class="img-fluid">
+                    <h5>Kesehatan</h5>
+                    <p>Produk terbaik untuk Anda</p>
+                </div>
             </div>
-            <ul class="features">
-                <li><i class="fas fa-play"></i> Catchplay+</li>
-                <li><i class="fas fa-star"></i> Prime Video</li>
-            </ul>
-            <div class="biaya-pasang">Biaya Pasang: Rp 166.500</div>
-            <button class="cta-button" onclick="openModal('75Mbps')">Isi Formulir</button>
-        </div>
-
-        <div class="package-card" data-package="150Mbps">
-            <div class="speed">150Mbps</div>
-            <div class="price">
-                <span>Rp</span>375<small>.000</small>
-                <div class="per-bulan">/ bulan</div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200x200?text=Rumah+Tangga" alt="Rumah Tangga" class="img-fluid">
+                    <h5>Rumah Tangga</h5>
+                    <p>Segala kebutuhan rumah</p>
+                </div>
             </div>
-            <ul class="features">
-                <li><i class="fas fa-play"></i> Catchplay+</li>
-                <li><i class="fas fa-star"></i> Prime Video</li>
-            </ul>
-            <div class="biaya-pasang">Biaya Pasang: Rp 166.500</div>
-            <button class="cta-button" onclick="openModal('150Mbps')">Isi Formulir</button>
         </div>
-        
-        <div class="package-card" data-package="200Mbps">
-            <div class="speed">200Mbps</div>
-            <div class="price">
-                <span>Rp</span>515<small>.000</small>
-                <div class="per-bulan">/ bulan</div>
-            </div>
-            <ul class="features">
-                <li><i class="fas fa-play"></i> Catchplay+</li>
-                <li><i class="fas fa-film"></i> Netflix</li>
-            </ul>
-            <div class="biaya-pasang">Biaya Pasang: Rp 166.500</div>
-            <button class="cta-button" onclick="openModal('200Mbps')">Isi Formulir</button>
-        </div>
+    </section>
 
-    </main>
-
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>Harga belum termasuk PPN 11%. Syarat & Ketentuan berlaku.</p>
-            <p class="area-text">DS INDIHOME Barru, Pangkep, Maros</p>
-        </div>
+        <p>&copy; 2023 Shopee Clone. Semua hak dilindungi.</p>
+        <p>Ikuti kami di: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Instagram</a></p>
     </footer>
 
-
-    <div id="registrationModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
-            <h2>Formulir Pendaftaran</h2>
-            <p>Lengkapi data untuk pengecekan jaringan (ODP)</p>
-            
-            <form id="regForm">
-                <label for="package">Paket Pilihan:</label>
-                <input type="text" id="package" name="package" required readonly>
-
-                <label for="name">Nama Lengkap:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Alamat Email:</label>
-                <input type="email" id="email" name="email">
-
-                <label for="whatsapp">No. HP / WhatsApp (Aktif):</label>
-                <input type="tel" id="whatsapp" name="whatsapp" required>
-
-                <label for="alt_phone">No. Alternatif (Opsional):</label>
-                <input type="tel" id="alt_phone" name="alt_phone">
-
-                <label for="address">Alamat Pemasangan Lengkap:</label>
-                <textarea id="address" name="address" required></textarea>
-
-                <label for="location">Share Location (Google Maps):</label>
-                <input type="url" id="location" name="location">
-                <small>*Klik tombol biru untuk otomatis isi lokasi (fitur ini memerlukan JavaScript yang lebih kompleks).</small>
-
-                <button type="submit" class="submit-button">KIRIM DATA SEKARANG</button>
-            </form>
-        </div>
-    </div>
-
-
-    <script>
-        // ================== JAVASCRIPT UNTUK MODAL ==================
-        function openModal(packageName) {
-            const modal = document.getElementById('registrationModal');
-            const packageInput = document.getElementById('package');
-            
-            // Mengisi input paket dengan nama paket yang dipilih
-            packageInput.value = packageName;
-            
-            modal.style.display = "block";
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('registrationModal');
-            modal.style.display = "none";
-        }
-
-        // Menutup modal jika pengguna mengklik di luar area modal
-        window.onclick = function(event) {
-            const modal = document.getElementById('registrationModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
