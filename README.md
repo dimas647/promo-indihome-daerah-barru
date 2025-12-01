@@ -3,85 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopee Clone - Promosi Toko Online</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Promo IndiHome Unlimited - Replika</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; }
-        .header { background-color: #ee4d2d; color: white; padding: 10px 0; }
-        .promo-banner { background-color: #f8f9fa; padding: 20px; text-align: center; }
-        .category { margin: 20px 0; }
-        .product-card { border: 1px solid #ddd; padding: 10px; margin: 10px; text-align: center; }
-        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-2">
-                    <h2>Shopee Clone</h2> <!-- Ganti dengan logo gambar jika ada -->
-                </div>
-                <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Cari produk...">
-                </div>
-                <div class="col-md-4 text-end">
-                    <a href="#" class="text-white me-3">Keranjang</a>
-                    <a href="#" class="text-white">Login</a>
-                </div>
-            </div>
-        </div>
+    <header class="promo-header">
+        <h1>PROMO INDIHOME UNLIMITED</h1>
+        <p>Internet Fiber Optik Tercepat & Stabil untuk Rumah Anda</p>
+        <button class="sales-badge">
+            <span class="heart-icon">❤</span> 100% Sales Resmi
+        </button>
     </header>
 
-    <!-- Banner Promosi -->
-    <section class="promo-banner">
-        <h1>Diskon Hingga 70%!</h1>
-        <p>Belanja produk favorit Anda dengan harga terbaik. Promo terbatas!</p>
-        <img src="https://via.placeholder.com/800x300?text=Promo+Banner" alt="Banner Promosi" class="img-fluid">
-    </section>
-
-    <!-- Kategori Produk -->
-    <section class="container category">
-        <h2>Kategori Populer</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/200x200?text=Elektronik" alt="Elektronik" class="img-fluid">
-                    <h5>Elektronik</h5>
-                    <p>Diskon hingga 50%</p>
-                </div>
+    <div class="promo-container">
+        
+        <div class="promo-card">
+            <div class="speed-box">20</div>
+            <div class="unit-text">Mbps</div>
+            <div class="price-box">
+                <span class="currency">Rp</span>340.000
             </div>
-            <div class="col-md-3">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/200x200?text=Fashion" alt="Fashion" class="img-fluid">
-                    <h5>Fashion</h5>
-                    <p>Stylish dan murah</p>
-                </div>
+            <div class="duration-text">/ bulan</div>
+            <div class="divider"></div>
+            <h3>Termasuk Aplikasi:</h3>
+            <div class="app-badges">
+                <span class="app-badge tv">IndiHome TV</span>
             </div>
-            <div class="col-md-3">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/200x200?text=Kesehatan" alt="Kesehatan" class="img-fluid">
-                    <h5>Kesehatan</h5>
-                    <p>Produk terbaik untuk Anda</p>
-                </div>
+            <div class="installation-fee">
+                Biaya Pasang: Rp 166.500
             </div>
-            <div class="col-md-3">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/200x200?text=Rumah+Tangga" alt="Rumah Tangga" class="img-fluid">
-                    <h5>Rumah Tangga</h5>
-                    <p>Segala kebutuhan rumah</p>
-                </div>
-            </div>
+            <button class="form-button red">
+                <span class="form-icon">📝</span> Isi Formulir
+            </button>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Shopee Clone. Semua hak dilindungi.</p>
-        <p>Ikuti kami di: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Instagram</a></p>
-    </footer>
+        <div class="promo-card best-seller">
+            <span class="best-seller-tag">⚡ TERLARIS</span>
+            <div class="speed-box">50</div>
+            <div class="unit-text">Mbps</div>
+            <div class="price-box">
+                <span class="currency">Rp</span>240.000
+            </div>
+            <div class="duration-text">/ bulan</div>
+            <div class="divider"></div>
+            <h3>Termasuk Aplikasi:</h3>
+            <div class="app-badges">
+                <span class="app-badge orange">Catchplay+</span>
+                <span class="app-badge tv">TV</span>
+                <span class="app-badge blue">Prime</span>
+            </div>
+            <div class="installation-fee">
+                Biaya Pasang: Rp 166.500
+            </div>
+            <button class="form-button red">
+                <span class="form-icon">📝</span> Isi Formulir
+            </button>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="promo-card">
+            <div class="speed-box">75</div>
+            <div class="unit-text">Mbps</div>
+            <div class="price-box">
+                <span class="currency">Rp</span>270.000
+            </div>
+            <div class="duration-text">/ bulan</div>
+            <div class="divider"></div>
+            <h3>Termasuk Aplikasi:</h3>
+            <div class="app-badges">
+                <span class="app-badge orange">Catchplay+</span>
+                <span class="app-badge blue">Prime</span>
+            </div>
+            <div class="installation-fee">
+                Biaya Pasang: Rp 166.500
+            </div>
+            <button class="form-button red">
+                <span class="form-icon">📝</span> Isi Formulir
+            </button>
+        </div>
+
+        <div class="promo-card">
+            <div class="speed-box">150</div>
+            <div class="unit-text">Mbps</div>
+            <div class="price-box">
+                <span class="currency">Rp</span>375.000
+            </div>
+            <div class="duration-text">/ bulan</div>
+            <div class="divider"></div>
+            <h3>Termasuk Aplikasi:</h3>
+            <div class="app-badges">
+                <span class="app-badge orange">Catchplay+</span>
+                <span class="app-badge blue">Prime</span>
+            </div>
+            <div class="installation-fee">
+                Biaya Pasang: Rp 166.500
+            </div>
+            <button class="form-button red">
+                <span class="form-icon">📝</span> Isi Formulir
+            </button>
+        </div>
+
+        <div class="promo-card">
+            <div class="speed-box">200</div>
+            <div class="unit-text">Mbps</div>
+            <div class="price-box">
+                <span class="currency">Rp</span>515.000
+            </div>
+            <div class="duration-text">/ bulan</div>
+            <div class="divider"></div>
+            <h3>Termasuk Aplikasi:</h3>
+            <div class="app-badges">
+                <span class="app-badge orange">Catchplay+</span>
+                <span class="app-badge netflix">Netflix</span>
+            </div>
+            <div class="installation-fee">
+                Biaya Pasang: Rp 166.500
+            </div>
+            <button class="form-button red">
+                <span class="form-icon">📝</span> Isi Formulir
+            </button>
+        </div>
+        
+    </div>
+
+    <footer class="promo-footer">
+        <p>Harga belum termasuk PPN 11%. Syarat & Ketentuan berlaku.</p>
+        <p>DS INDIHOME Barru, Pangkep, Maros</p>
+        </footer>
+
 </body>
 </html>
